@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.article`
-  height: 80%;
+  width: 400px;
   aspect-ratio: 2/3;
   position: relative;
 `
@@ -17,15 +17,16 @@ export const CardContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: min(10px, 3vw);
-  padding: min(10px, 3vw);
+  padding: min(10px, 3vw) min(15px, 3.3vw);
 `
 
 export const CardTitle = styled.div`
-  height: 8%;
+  height: 8.5%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: ${({ theme }) => theme.colors.textPrimary};
+  font-size: min(22px, 6vw);
 `
 
 export const CardBody = styled.div`
