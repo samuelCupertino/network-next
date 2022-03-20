@@ -1,1 +1,1 @@
-export * from './SpaceBgEffect'
+export * from './CardGitHub'

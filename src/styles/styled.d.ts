@@ -7,12 +7,9 @@ declare module 'styled-components' {
       primary: string
       secondary: string
       tertiary: string
-      bgPrimary: string
-      bgSecondary: string
-      bgTertiary: string
+      quaternary: string
       textPrimary: string
       textSecondary: string
-      textTertiary: string
     }
     utils: {
       applySuffix(prop: number | string | undefined, suffix = 'px'): string

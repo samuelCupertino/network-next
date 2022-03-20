@@ -1,18 +1,15 @@
 import { utils } from './utils'
 
-export const dark = {
+export const theme = {
   title: 'dark',
 
   colors: {
-    primary: '#4078c0',
-    secondary: '#6cc644',
-    tertiary: '#6c697c',
-    bgPrimary: '#141128',
-    bgSecondary: '#1d1933',
-    bgTertiary: '#272242',
-    textPrimary: '#ffffff',
-    textSecondary: '#c4c3ce',
-    textTertiary: '#a09fad'
+    primary: '#82dbe3',
+    secondary: '#3b6879',
+    tertiary: '#0e373e',
+    quaternary: '#041620',
+    textPrimary: '#7796a0',
+    textSecondary: '#557984'
   },
 
   utils
