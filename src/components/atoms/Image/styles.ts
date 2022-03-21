@@ -1,7 +1,5 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
-interface IContainerProps {}
-
-export const Container = styled.div<IContainerProps>`
-  opacity: 0.5;
+export const Container = styled.div`
+  display: inline-block;
 `

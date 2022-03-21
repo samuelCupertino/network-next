@@ -1,21 +1,21 @@
 import ImageNext from 'next/image'
 import { Container } from './styles'
 
-interface IImageProps {
+interface IImageRenderProps {
   src: string
   alt: string
   width?: number
   height?: number
 }
 
-export const Image: React.FC<IImageProps> = ({
+export const ImageRender: React.FC<IImageRenderProps> = ({
   src,
   alt,
-  height = 100,
-  width = height
+  width = 100,
+  height = width
 }) => {
   return (
-    <Container>
+    <Container height={height}>
       <ImageNext {...{ src, alt, height, width }} />
     </Container>
   )
