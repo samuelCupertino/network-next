@@ -1,11 +1,10 @@
 import { GridNetwork } from './styles'
 
-import { ImageRender, ContainerRender } from '../../atoms'
-import { Card, UserDescription } from '../../molecules'
+import { ImageRender, TextRender, Button } from '../../atoms'
+import { Card } from '../../molecules'
 
 export const CardNetwork: React.FC = () => {
   return (
-    // <Container>
     <Card title="Samuel Cupertino">
       <GridNetwork>
         <ImageRender
@@ -13,12 +12,15 @@ export const CardNetwork: React.FC = () => {
           alt="Foto do perfil"
           width={150}
         />
-        <ContainerRender dirTo="right">
-          Desenvolvedor full-stack, apaixonado pela 11ª arte e abstrações fora
-          da caixa.
-        </ContainerRender>
+        <TextRender>
+          Detectado! Desenvolvedor full-stack, apaixonado pela 11ª arte e
+          abstrações fora da caixa.
+        </TextRender>
+        <Button>LinkedIn</Button>
+        <Button>GitHub</Button>
+        <Button>Instagram</Button>
+        <Button>E-mail</Button>
       </GridNetwork>
     </Card>
-    // </Container>
   )
 }

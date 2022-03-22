@@ -20,13 +20,13 @@ export const CardContent = styled.div`
   padding: min(10px, 3vw) min(15px, 3.3vw);
 `
 
-export const CardTitle = styled.div`
+export const CardTitle = styled.h1`
   height: 8.5%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: ${({ theme }) => theme.colors.textPrimary};
-  font-size: min(22px, 6vw);
+  font-size: min(23px, 6vw);
 `
 
 export const CardBody = styled.div`
