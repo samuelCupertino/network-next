@@ -26,7 +26,7 @@ export const CardTitle = styled.h1`
   justify-content: center;
   align-items: center;
   color: ${({ theme }) => theme.colors.textPrimary};
-  font-size: min(23px, 6vw);
+  font-size: min(24px, calc(24 * 0.228vw));
 `
 
 export const CardBody = styled.div`

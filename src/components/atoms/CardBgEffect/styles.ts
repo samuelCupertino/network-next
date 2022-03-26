@@ -1,4 +1,19 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const animCard = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    .card-body {
+      stroke: red;
+      stroke-opacity: 0.5;
+      stroke-width: 3px;
+      fill: url(#bodyGradient);
+      opacity: 0.75;
+    }
+  }
+`
 
 export const Container = styled.div`
   display: flex;
@@ -42,4 +57,6 @@ export const Container = styled.div`
     stroke-width: 2px;
     fill: transparent;
   }
+
+  animation: ${animCard} 8s forwards;
 `

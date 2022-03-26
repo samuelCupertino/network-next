@@ -21,19 +21,19 @@ const animRenderBar = keyframes`
 `
 
 interface IContainerProps {
-  height?: number
+  width?: string
+  height?: string
 }
 
 export const Container = styled.div<IContainerProps>`
-  --height: ${props => props.height || 0}px;
-  display: inline-block;
+  --height: ${props => props.height || 0};
+  width: ${props => props.width || 0};
   position: relative;
   overflow: hidden;
   animation: ${animRenderImage} 2.5s linear forwards;
 
   &::after {
     content: '';
-    display: inline-block;
     height: 2px;
     width: 100%;
     position: absolute;
@@ -42,5 +42,11 @@ export const Container = styled.div<IContainerProps>`
     background: ${({ theme }) => theme.colors.primary};
     z-index: 1;
     animation: ${animRenderBar} 0.5s 6 forwards;
+  }
+
+  > .image {
+    width: ${props => props.width || 0};
+    height: ${props => props.height || 0};
+    object-fit: cover;
   }
 `

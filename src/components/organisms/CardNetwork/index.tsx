@@ -10,7 +10,7 @@ export const CardNetwork: React.FC = () => {
         <ImageRender
           src="https://avatars.githubusercontent.com/u/88355379?v=4"
           alt="Foto do perfil"
-          width={150}
+          width="min(150px, calc(150 * 0.230vw))"
         />
         <TextRender>
           Detectado! Desenvolvedor full-stack, apaixonado pela 11ª arte e
