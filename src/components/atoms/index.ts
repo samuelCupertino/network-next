@@ -1,7 +1,5 @@
 export * from './SpaceBgEffect'
 export * from './CardBgEffect'
 export * from './ImageRender'
-export * from './Image'
-export * from './ContainerRender'
 export * from './TextRender'
 export * from './Button'

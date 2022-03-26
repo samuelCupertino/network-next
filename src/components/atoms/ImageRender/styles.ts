@@ -34,7 +34,7 @@ export const Container = styled.div<IContainerProps>`
 
   &::after {
     content: '';
-    height: 2px;
+    height: min(2px, calc(2 * 0.228vw));
     width: 100%;
     position: absolute;
     bottom: 0;
