@@ -1,6 +1,6 @@
 import { GridNetwork } from './styles'
 
-import { ImageRender, TextRender, Button } from '../../atoms'
+import { ImageRender, TextRender, Link } from '../../atoms'
 import { Card } from '../../molecules'
 
 export const CardNetwork: React.FC = () => (
@@ -15,10 +15,21 @@ export const CardNetwork: React.FC = () => (
         Detectado! Desenvolvedor full-stack, apaixonado pela 11ª arte e
         abstrações fora da caixa.
       </TextRender>
-      <Button>LinkedIn</Button>
-      <Button>GitHub</Button>
-      <Button>Instagram</Button>
-      <Button>E-mail</Button>
+      <Link
+        href="https://www.linkedin.com/in/samuel-cupertino-618ba3218/"
+        target="_blank"
+      >
+        LinkedIn
+      </Link>
+      <Link href="https://github.com/samuelCupertino" target="_blank">
+        GitHub
+      </Link>
+      <Link href="http://instagram.com/_u/samuelcupertino.dev" target="_blank">
+        Instagram
+      </Link>
+      <Link href="mailto:contato.samuelcupertino@gmail.com" target="_blank">
+        E-mail
+      </Link>
     </GridNetwork>
   </Card>
 )
