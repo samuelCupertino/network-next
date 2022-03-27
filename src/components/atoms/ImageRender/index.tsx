@@ -12,10 +12,8 @@ export const ImageRender: React.FC<IImageRenderProps> = ({
   alt,
   width = '100px',
   height = width
-}) => {
-  return (
-    <Container width={width} height={height}>
-      <img className="image" src={src} alt={alt} />
-    </Container>
-  )
-}
+}) => (
+  <Container width={width} height={height}>
+    <img className="image" src={src} alt={alt} />
+  </Container>
+)

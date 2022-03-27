@@ -4,6 +4,6 @@ interface IButtonProps {
   children: string
 }
 
-export const Button: React.FC<IButtonProps> = ({ children }) => {
-  return <Container>{children}</Container>
-}
+export const Button: React.FC<IButtonProps> = ({ children }) => (
+  <Container>{children}</Container>
+)

@@ -5,14 +5,12 @@ import { CardBgEffect } from '../../atoms'
 interface ICardProps {
   title: String
 }
-export const Card: React.FC<ICardProps> = ({ title, children }) => {
-  return (
-    <Container>
-      <CardBgEffect />
-      <CardContent>
-        <CardTitle>{title}</CardTitle>
-        <CardBody>{children}</CardBody>
-      </CardContent>
-    </Container>
-  )
-}
+export const Card: React.FC<ICardProps> = ({ title, children }) => (
+  <Container>
+    <CardBgEffect />
+    <CardContent>
+      <CardTitle>{title}</CardTitle>
+      <CardBody>{children}</CardBody>
+    </CardContent>
+  </Container>
+)
