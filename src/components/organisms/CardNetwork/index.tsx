@@ -9,11 +9,11 @@ export const CardNetwork: React.FC = () => (
       <ImageRender
         src="https://avatars.githubusercontent.com/u/88355379?v=4"
         alt="Foto do perfil"
-        width="min(150px, calc(150 * 0.230vw))"
+        width="min(150px, calc(150 * 0.228vw))"
       />
-      <TextRender>
+      <TextRender margin="min(5px, calc(5 * 0.228vw)) 0">
         Detectado! Desenvolvedor full-stack, apaixonado pela 11ª arte e
-        abstrações fora da caixa.
+        abstrações fora da caixa. Desafios e inovação são sua força motriz.
       </TextRender>
       <Link
         href="https://www.linkedin.com/in/samuel-cupertino-618ba3218/"

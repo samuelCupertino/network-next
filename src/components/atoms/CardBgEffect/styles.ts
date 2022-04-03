@@ -1,4 +1,16 @@
-import styled from 'styled-components'
+import styled, { keyframes, createGlobalStyle } from 'styled-components'
+
+const animDivergentGradient = keyframes`
+  to {
+    stop-color: rgb(255 0 0 / 50%);
+  }
+`
+
+const animDivergentBorder = keyframes`
+  to {
+    stroke: rgb(255 0 0 / 50%);
+  }
+`
 
 export const Container = styled.div`
   display: flex;
@@ -41,5 +53,33 @@ export const Container = styled.div`
     stroke-opacity: 0.75;
     stroke-width: 2px;
     fill: transparent;
+  }
+`
+
+/* animations */
+export const GlobalStyle = createGlobalStyle`
+  .anim-error ${Container} {
+    .card-body {
+      animation: ${animDivergentBorder} 1.5s 1.5s ease-in-out infinite alternate;
+    }
+    #bodyGradient .stop-1,
+    #bodyGradient .stop-2 {
+      animation: ${animDivergentGradient} 1.5s 1.5s ease-in-out infinite
+        alternate;
+    }
+
+    .card-detail-line {
+      animation: ${animDivergentBorder} 1.5s 1s ease-in-out infinite alternate;
+    }
+
+    #detailGradient1 .stop-1,
+    #detailGradient2 .stop-1 {
+      animation: ${animDivergentGradient} 1.5s 1s ease-in-out infinite alternate;
+    }
+    #detailGradient2 .stop-2,
+    #detailGradient1 .stop-2 {
+      animation: ${animDivergentGradient} 1.5s 1.5s ease-in-out infinite
+        alternate;
+    }
   }
 `
