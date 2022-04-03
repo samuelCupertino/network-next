@@ -1,4 +1,4 @@
-export * from './SpaceBgEffect'
+export * from './MatrixBgEffect'
 export * from './CardBgEffect'
 export * from './ImageRender'
 export * from './TextRender'

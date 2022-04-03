@@ -1,6 +1,6 @@
 import { Container, GlobalStyle } from './styles'
 
-export const SpaceBgEffect: React.FC = () => (
+export const MatrixBgEffect: React.FC = () => (
   <Container>
     <GlobalStyle />
   </Container>
