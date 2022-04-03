@@ -23,10 +23,12 @@ const animRenderBar = keyframes`
 interface IContainerProps {
   width?: string
   height?: string
+  gridArea?: string
 }
 
 export const Container = styled.div<IContainerProps>`
   --height: ${props => props.height || 0};
+  grid-area: ${({ gridArea = 'unset' }) => gridArea};
   width: ${props => props.width || 0};
   position: relative;
   overflow: hidden;

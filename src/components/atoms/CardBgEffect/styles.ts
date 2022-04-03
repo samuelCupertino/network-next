@@ -60,25 +60,25 @@ export const Container = styled.div`
 export const GlobalStyle = createGlobalStyle`
   .anim-error ${Container} {
     .card-body {
-      animation: ${animDivergentBorder} 1.5s 1.5s ease-in-out infinite alternate;
+      animation: ${animDivergentBorder} 1.5s 1s ease-in-out infinite alternate;
     }
     #bodyGradient .stop-1,
     #bodyGradient .stop-2 {
-      animation: ${animDivergentGradient} 1.5s 1.5s ease-in-out infinite
+      animation: ${animDivergentGradient} 1.5s 1s ease-in-out infinite
         alternate;
     }
 
     .card-detail-line {
-      animation: ${animDivergentBorder} 1.5s 1s ease-in-out infinite alternate;
+      animation: ${animDivergentBorder} 1.5s 0.5s ease-in-out infinite alternate;
     }
 
     #detailGradient1 .stop-1,
     #detailGradient2 .stop-1 {
-      animation: ${animDivergentGradient} 1.5s 1s ease-in-out infinite alternate;
+      animation: ${animDivergentGradient} 1.5s 0.5s ease-in-out infinite alternate;
     }
     #detailGradient2 .stop-2,
     #detailGradient1 .stop-2 {
-      animation: ${animDivergentGradient} 1.5s 1.5s ease-in-out infinite
+      animation: ${animDivergentGradient} 1.5s 1s ease-in-out infinite
         alternate;
     }
   }

@@ -5,13 +5,15 @@ import { Container } from './styles'
 interface ITextRenderProps {
   children: string
   margin?: string
+  gridArea?: string
 }
 
 export const TextRender: React.FC<ITextRenderProps> = ({
   children,
-  margin
+  margin,
+  gridArea
 }) => (
-  <Container margin={margin}>
+  <Container margin={margin} gridArea={gridArea}>
     <Typewriter
       words={[children]}
       loop={5}

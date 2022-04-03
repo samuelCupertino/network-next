@@ -5,15 +5,19 @@ interface IImageRenderProps {
   alt: string
   width?: string
   height?: string
+  gridArea?: string
+  onClick: () => void
 }
 
 export const ImageRender: React.FC<IImageRenderProps> = ({
   src,
   alt,
   width = '100px',
-  height = width
+  height = width,
+  gridArea,
+  onClick
 }) => (
-  <Container width={width} height={height}>
+  <Container {...{ width, height, gridArea, onClick }}>
     <img className="image" src={src} alt={alt} />
   </Container>
 )

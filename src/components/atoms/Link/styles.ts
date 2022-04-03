@@ -9,8 +9,12 @@ const animButton = keyframes`
   }
 `
 
-export const LinkCustom = styled.a`
-  grid-column: 1/3;
+interface ILinkProps {
+  gridArea?: string
+}
+
+export const LinkCustom = styled.a<ILinkProps>`
+  grid-area: ${({ gridArea = 'unset' }) => gridArea};
   text-align: center;
   padding: min(10px, calc(10 * 0.228vw)) min(20px, calc(20 * 0.228vw));
   font-size: min(20px, calc(20 * 0.228vw));
