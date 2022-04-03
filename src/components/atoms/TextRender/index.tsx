@@ -14,14 +14,6 @@ export const TextRender: React.FC<ITextRenderProps> = ({
   gridArea
 }) => (
   <Container margin={margin} gridArea={gridArea}>
-    <Typewriter
-      words={[children]}
-      loop={5}
-      cursor
-      cursorStyle="_"
-      typeSpeed={70}
-      deleteSpeed={50}
-      delaySpeed={5000}
-    />
+    <Typewriter words={[children]} cursor cursorStyle="_" typeSpeed={70} />
   </Container>
 )
