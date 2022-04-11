@@ -37,10 +37,12 @@ export const CardNetwork: React.FC = () => (
       <TextRender
         gridArea="description"
         margin="min(5px, calc(5 * 0.228vw)) 0 0"
-      >
-        Desenvolvedor full-stack, apaixonado pela 11ª arte e abstrações fora da
-        caixa. Desafios e inovação são sua força motriz.
-      </TextRender>
+        text={[
+          'Desenvolvedor full-stack, apaixonado pela 11ª arte e abstrações fora da caixa. Desafios e inovação são sua força motriz.',
+          'Cativado pelo ecossistema da linguagem JavaScript, adora se aventurar em suas novidades.',
+          'Entende evolução e aprendizado como processos continuos. Então, busca aprofundar seus conhecimentos constantemente.'
+        ]}
+      />
       <Link
         gridArea="link1"
         href="https://www.linkedin.com/in/samuel-cupertino-618ba3218/"
